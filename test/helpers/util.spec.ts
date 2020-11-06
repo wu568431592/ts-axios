@@ -5,14 +5,13 @@ import {
   isURLSearchParams,
   extend,
   deepMerge
-} from '../../src/helpers/utils'
+} from '../../src/helpers/util'
 
-describe('helpers:utils', () => {
+describe('helpers:util', () => {
   describe('isXX', () => {
     test('should validate Date', () => {
       expect(isDate(new Date())).toBeTruthy()
       expect(isDate(Date.now())).toBeFalsy()
-      expect(isDate(123)).toBeFalsy()
     })
 
     test('should validate PlainObject', () => {
